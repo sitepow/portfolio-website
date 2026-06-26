@@ -31,7 +31,7 @@ export function SkillSection() {
 
   return (
     <Section imageFolder="skill">
-      <div className="text-white flex flex-col gap-8 backdrop-blur-md p-8 md:p-12 rounded-2xl">
+      <div className="text-white flex flex-col gap-4 backdrop-blur-md p-5">
         <h2 className="leading-tight font-bold text-5xl md:text-7xl">
           My Skills
         </h2>

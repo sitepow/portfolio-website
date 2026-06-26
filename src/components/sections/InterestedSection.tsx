@@ -5,7 +5,7 @@ export function InterestedSection() {
   return (
     <Section imageFolder="interested">
       <div className="text-white flex flex-col gap-4 backdrop-blur-md p-5">
-        <h2 className="max-w-2xl leading-tight font-bold text-7xl">
+        <h2 className="leading-tight font-bold text-5xl md:text-7xl">
           What I'm interested in right now.
         </h2>
 

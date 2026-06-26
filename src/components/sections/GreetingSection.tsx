@@ -7,7 +7,7 @@ export function GreetingSection() {
   return (
     <Section imageFolder="greeting">
       <div className="text-white flex flex-col gap-4 backdrop-blur-md p-5">
-        <h1 className="max-w-2xl  leading-tight font-bold text-7xl">
+        <h1 className="leading-tight font-bold text-5xl md:text-7xl">
           Web Developer
         </h1>
 
@@ -41,6 +41,11 @@ export function GreetingSection() {
         <Button variant="secondary">
           <ArrowUpRight />
           จ้างงานผ่าน Fastwork
+        </Button>
+
+        <Button variant="secondary">
+          <ArrowUpRight />
+          ดูข้อมูลผ่าน JobThai
         </Button>
       </div>
     </Section>
