@@ -5,8 +5,8 @@ import { HighlightWording } from "../HighlightWording";
 
 export function GreetingSection() {
   return (
-    <Section>
-      <div className="text-white flex flex-col items-center gap-4">
+    <Section imageFolder="greeting">
+      <div className="text-white flex flex-col gap-4 backdrop-blur-md p-5">
         <h1 className="max-w-2xl  leading-tight font-bold text-7xl">
           Web Developer
         </h1>
