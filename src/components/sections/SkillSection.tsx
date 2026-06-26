@@ -9,8 +9,19 @@ export function SkillSection() {
       items: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Prisma"],
     },
     {
+      title: "Ecosystem & API",
+      items: ["TanStack Query", "tRPC (Basic Knowledge)"],
+    },
+    {
       title: "Tools & DevOps",
-      items: ["Tailwind CSS", "Git", "Docker", "Vercel"],
+      items: [
+        "Vite",
+        "Tailwind CSS",
+        "Git",
+        "Docker",
+        "Vercel",
+        "Ubuntu/Linux",
+      ],
     },
     {
       title: "Cyber Security (Learning)",
