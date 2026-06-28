@@ -2,7 +2,17 @@ import { Section } from "../Section";
 
 export function SkillSection() {
   const skills = [
-    { title: "Frameworks", items: ["Next.js", "React", "Express"] },
+    {
+      title: "Frameworks",
+      items: [
+        "Next.js",
+        "React",
+        "Express",
+        "NestJS (Basic Knowledge)",
+        "Nuxt.js (Basic Knowledge)",
+        "Vue.js (Basic Knowledge)",
+      ],
+    },
     { title: "Languages", items: ["TypeScript", "JavaScript", "SQL"] },
     {
       title: "Database & ORM",

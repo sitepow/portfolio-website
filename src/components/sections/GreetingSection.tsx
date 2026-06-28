@@ -34,15 +34,18 @@ export function GreetingSection() {
         </Button>
 
         <Button variant="secondary">
-          <ArrowUpRight />
-          ดูโค๊ดบน Github
+          <DownloadIcon />
+          ดาว์นโหลดวุฒิการศึกษา
         </Button>
 
         <Button variant="secondary">
           <ArrowUpRight />
+          ดูโค๊ดบน Github
+        </Button>
+        <Button variant="secondary">
+          <ArrowUpRight />
           จ้างงานผ่าน Fastwork
         </Button>
-
         <Button variant="secondary">
           <ArrowUpRight />
           ดูข้อมูลผ่าน JobThai

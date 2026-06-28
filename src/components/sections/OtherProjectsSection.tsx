@@ -35,7 +35,7 @@ export function OtherProjectsSection() {
             >
               <div className="flex flex-wrap justify-between items-baseline">
                 <h3 className="text-2xl font-bold">{project.name}</h3>
-                <span className="text-sm bg-primary text-white/40 font-mono italic">
+                <span className="text-sm bg-primary p-2.5 text-white/40 italic">
                   {project.tech}
                 </span>
               </div>

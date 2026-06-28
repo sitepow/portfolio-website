@@ -9,7 +9,7 @@ export function Section({ imageFolder, children }: SectionProps) {
   const { currentImage } = useLandingImages({ imageFolder });
 
   return (
-    <div className="min-h-screen px-5 flex flex-col justify-center items-center w-full bg-neutral-900 relative">
+    <div className="min-h-screen px-5 flex flex-col py-10 justify-center items-center w-full bg-neutral-900 relative">
       <div className="absolute inset-0 z-0">
         <div
           key={currentImage}
