@@ -2,6 +2,7 @@ import { ArrowUpRight, DownloadIcon } from "lucide-react";
 import { Section } from "../Section";
 import { Button } from "../ui/button";
 import { HighlightWording } from "../HighlightWording";
+import { BUTTON_ClASS } from "@/constants/system";
 
 export function GreetingSection() {
   return (
@@ -22,31 +23,33 @@ export function GreetingSection() {
           .
           <br />
           ปัจุบันเป็นเจ้าของแพลตฟอร์ม ให้เช่าร้านค้าออนไลน์ ที่ชื่อว่า{" "}
-          <HighlightWording>Sitepow Store</HighlightWording>{" "}
+          <HighlightWording url="https://sitepow.store">
+            Sitepow Store
+          </HighlightWording>{" "}
           ซึ่งตอนนี้ก็กำลังอยู่ในช่วงพัฒนาระบบอย่างต่อเนื่อง
         </h2>
       </div>
 
       <div className="flex gap-2.5 flex-wrap">
-        <Button variant="secondary">
+        <Button className={BUTTON_ClASS}>
           <DownloadIcon />
           ดาว์นโหลดเรซูเม่
         </Button>
 
-        <Button variant="secondary">
+        <Button className={BUTTON_ClASS}>
           <DownloadIcon />
           ดาว์นโหลดวุฒิการศึกษา
         </Button>
 
-        <Button variant="secondary">
+        <Button className={BUTTON_ClASS}>
           <ArrowUpRight />
           ดูโค๊ดบน Github
         </Button>
-        <Button variant="secondary">
+        <Button className={BUTTON_ClASS}>
           <ArrowUpRight />
           จ้างงานผ่าน Fastwork
         </Button>
-        <Button variant="secondary">
+        <Button className={BUTTON_ClASS}>
           <ArrowUpRight />
           ดูข้อมูลผ่าน JobThai
         </Button>

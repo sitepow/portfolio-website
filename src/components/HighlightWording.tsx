@@ -1,5 +1,15 @@
 import type { PropsWithChildren } from "react";
 
-export function HighlightWording({ children }: PropsWithChildren) {
-  return <span className="text-white">{children}</span>;
+interface HighlightWordingProps extends PropsWithChildren {
+  url?: string;
+}
+
+export function HighlightWording({ url, children }: HighlightWordingProps) {
+  return url ? (
+    <a className="text-white underline" href={url} target="_blank">
+      {children}
+    </a>
+  ) : (
+    <span className="text-white">{children}</span>
+  );
 }

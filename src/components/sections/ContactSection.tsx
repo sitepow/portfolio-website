@@ -1,58 +1,70 @@
 import { Section } from "../Section";
-import { Copy, Check, ArrowUpRight } from "lucide-react";
-import { useState } from "react";
+import { Mail } from "lucide-react";
+
+const CONTRACT = {
+  title: "Contact",
+  description:
+    "สนใจร่วมงานหรือสอบถามข้อมูลเพิ่มเติม สามารถติดต่อได้ที่ช่องทางด้านล่างนี้ครับ",
+  email: {
+    label: "ส่งอีเมลถึงผม",
+    value: "kteeraphatt@gmail.com",
+  },
+  socialLinks: [
+    {
+      name: "GitHub",
+      url: "https://github.com/sitepow",
+      icon: "https://thesvg.org/icons/github/dark.svg",
+    },
+    {
+      name: "Facebook",
+      url: "https://web.facebook.com/teeraphat.tui",
+      icon: "https://thesvg.org/icons/facebook/default.svg",
+    },
+  ],
+};
 
 export function ContactSection() {
-  const [copied, setCopied] = useState(false);
-  const email = "kteeraphatt@gmail.com";
-
-  const copyEmail = () => {
-    navigator.clipboard.writeText(email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
   return (
-    <Section imageFolder="contact">
+    <Section>
       <div className="text-white flex flex-col gap-8 p-5 backdrop-blur-md">
         <div className="flex flex-col gap-2">
           <h1 className="leading-tight font-bold text-5xl md:text-7xl">
-            Contact
+            {CONTRACT.title}
           </h1>
-          <p className="text-white/60 text-lg">
-            สนใจร่วมงานหรือสอบถามข้อมูลเพิ่มเติม
-            สามารถติดต่อผมได้ที่ช่องทางด้านล่างนี้ครับ
-          </p>
+          <p className="text-white/60 text-lg">{CONTRACT.description}</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-white/5 p-6 rounded-xl border border-white/10 flex flex-col gap-4">
-            <span className="text-white/60">ส่งอีเมลถึงผม</span>
-            <div className="flex items-center justify-between">
-              <h3 className="text-xl font-bold">{email}</h3>
-              <button
-                onClick={copyEmail}
-                className="p-2 hover:bg-white/10 rounded-full transition-colors"
-              >
-                {copied ? (
-                  <Check className="text-green-400" />
-                ) : (
-                  <Copy size={20} />
-                )}
-              </button>
+          <a
+            href={`mailto:${CONTRACT.email.value}`}
+            className="bg-white/5 p-6 rounded-xl border border-white/10 hover:bg-white/10 transition-colors flex flex-col gap-2"
+          >
+            <span className="text-white/60 text-sm">
+              {CONTRACT.email.label}
+            </span>
+            <div className="flex items-center gap-3">
+              <Mail className="w-5 h-5" />
+              <h3 className="text-xl font-bold">{CONTRACT.email.value}</h3>
             </div>
-          </div>
+          </a>
 
-          <div className="flex gap-4">
-            <a
-              href="https://github.com/sitepow"
-              target="_blank"
-              rel="noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 bg-white/5 border border-white/10 rounded-xl p-4 hover:bg-primary/20 transition-all"
-            >
-              <ArrowUpRight />
-              <span className="text-sm font-bold">GitHub</span>
-            </a>
+          <div className="bg-white/5 p-6 rounded-xl border border-white/10 flex items-center justify-between">
+            <span className="text-white/60">ช่องทางอื่นๆ</span>
+            <div className="flex gap-4">
+              {CONTRACT.socialLinks.map((link) => {
+                return (
+                  <a
+                    key={link.name}
+                    href={link.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-white/80 transition-colors"
+                  >
+                    <img src={link.icon} className="size-10" />
+                  </a>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
