@@ -1,15 +1,27 @@
 import { useLandingImages } from "@/hooks/use-landing-images";
-import type { PropsWithChildren } from "react";
+import { cn } from "@/lib/utils";
+import type { ComponentProps } from "react";
 
-interface SectionProps extends PropsWithChildren {
+interface SectionProps extends ComponentProps<"div"> {
   imageFolder?: string;
 }
 
-export function Section({ imageFolder, children }: SectionProps) {
+export function Section({
+  imageFolder,
+  className,
+  children,
+  ...props
+}: SectionProps) {
   const { currentImage } = useLandingImages({ imageFolder });
 
   return (
-    <div className="min-h-screen px-5 flex flex-col py-10 justify-center items-center w-full bg-neutral-900 relative">
+    <div
+      className={cn(
+        "min-h-screen px-5 flex flex-col py-10 justify-center items-center w-full bg-neutral-900 relative",
+        className,
+      )}
+      {...props}
+    >
       <div className="absolute inset-0 z-0">
         <div
           key={currentImage}

@@ -6,7 +6,7 @@ import { BUTTON_ClASS } from "@/constants/system";
 
 export function GreetingSection() {
   return (
-    <Section imageFolder="greeting">
+    <Section imageFolder="greeting" className="pt-40 ">
       <div className="text-white flex flex-col gap-4 backdrop-blur-md p-5">
         <h1 className="leading-tight font-bold text-5xl md:text-7xl">
           Web Developer
