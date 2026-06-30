@@ -25,7 +25,7 @@ const CONTRACT = {
 
 export function ContactSection() {
   return (
-    <Section>
+    <Section imageFolder="contact">
       <div className="text-white flex flex-col gap-8 p-5 backdrop-blur-md">
         <div className="flex flex-col gap-2">
           <h1 className="leading-tight font-bold text-5xl md:text-7xl">

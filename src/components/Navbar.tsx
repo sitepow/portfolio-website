@@ -19,7 +19,14 @@ export function Navbar() {
   ];
 
   return (
-    <header className="bg-transparent backdrop-blur text-white fixed top-0 z-50 w-full">
+    <header className="backdrop-blur text-white fixed bg-neutral-900 top-0 z-50 w-full">
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <img
+          src="/src/assets/images/navbar/premium_photo-1689246621798-4e9cc4d07b13.jpeg"
+          className="size-full object-cover opacity-40"
+        />
+      </div>
+
       <nav className="container mx-auto flex items-center justify-between px-6 py-4">
         <Link to="/" className="text-xl font-bold">
           พอร์ตโฟลิโอ

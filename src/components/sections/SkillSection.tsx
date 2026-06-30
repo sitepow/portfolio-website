@@ -13,7 +13,10 @@ export function SkillSection() {
         "Vue.js (Basic Knowledge)",
       ],
     },
-    { title: "Languages", items: ["TypeScript", "JavaScript", "SQL"] },
+    {
+      title: "Languages",
+      items: ["TypeScript", "JavaScript", "SQL", "PHP (Legacy)"],
+    },
     {
       title: "Database & ORM",
       items: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Prisma"],
@@ -27,6 +30,8 @@ export function SkillSection() {
       items: [
         "Vite",
         "Tailwind CSS",
+        "HTML/CSS (Fundamentals)",
+        "WordPress (Legacy)",
         "Git",
         "Docker",
         "Vercel",
