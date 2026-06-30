@@ -22,7 +22,7 @@ export function Navbar() {
     <header className="backdrop-blur text-white fixed bg-neutral-900 top-0 z-50 w-full">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <img
-          src="/src/assets/images/navbar/premium_photo-1689246621798-4e9cc4d07b13.jpeg"
+          src="/navbar/premium_photo-1689246621798-4e9cc4d07b13.jpeg"
           className="size-full object-cover opacity-40"
         />
       </div>
