@@ -1,9 +1,12 @@
 import { Section } from "../Section";
+import { useI18n } from "@/context/i18n";
 
 export function SkillSection() {
+  const { t } = useI18n();
+
   const skills = [
     {
-      title: "Frameworks",
+      title: t.skills.frameworks,
       items: [
         "Next.js",
         "React",
@@ -14,19 +17,19 @@ export function SkillSection() {
       ],
     },
     {
-      title: "Languages",
+      title: t.skills.languages,
       items: ["TypeScript", "JavaScript", "SQL", "PHP (Legacy)"],
     },
     {
-      title: "Database & ORM",
+      title: t.skills.database,
       items: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Prisma"],
     },
     {
-      title: "Ecosystem & API",
+      title: t.skills.ecosystem,
       items: ["TanStack Query", "tRPC (Basic Knowledge)"],
     },
     {
-      title: "Tools & DevOps",
+      title: t.skills.tools,
       items: [
         "Vite",
         "Tailwind CSS",
@@ -39,7 +42,7 @@ export function SkillSection() {
       ],
     },
     {
-      title: "Cyber Security (Learning)",
+      title: t.skills.security,
       items: ["Ghidra", "Assembly (x86)", "C"],
     },
   ];
@@ -48,7 +51,7 @@ export function SkillSection() {
     <Section imageFolder="skill">
       <div className="text-white flex flex-col gap-4 backdrop-blur-md p-5">
         <h2 className="leading-tight font-bold text-5xl md:text-7xl">
-          My Skills
+          {t.skills.title}
         </h2>
 
         <div className="space-y-8">

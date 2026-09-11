@@ -2,15 +2,17 @@ import { BUTTON_ClASS } from "@/constants/system";
 import { Section } from "../Section";
 import { Button } from "../ui/button";
 import { ArrowUpRight } from "lucide-react";
+import { useI18n } from "@/context/i18n";
 
 export function FeaturedProjectsSection() {
+  const { t } = useI18n();
+
   const projects = [
     {
       name: "Sitepow Store (SaaS)",
       github: "",
       websiteUrl: "https://sitepow.store",
-      description:
-        "แพลตฟอร์มเปิดให้เช่าหน้าเว็บร้านค้าออนไลน์เป็นของตัวเอง เพิ่มความหน้าเชื่อถือของร้านค้า และสามารถจัดการสต็อก/ออเดอร์ได้ง่ายๆ พร้อมสามารถตั้งค่าราคาขนส่งได้เองตามต้องการ (Rate Matrix + Big Data ค่าส่งจากผู้ให้บริการคำนวนมาให้แล้วเป็นค่าเริ่มต้นระบบ) ซึ่งออกมาเพื่อแก้ปัญหาร้านค้าโดนค่าธรรมเนียมระบบแพลตฟอร์มต่างชาติที่แพงมากเกินไป ปัจจุบันก็กำลังอยู่ในช่วงพัฒนาระบบอย่างต่อเนื่อง",
+      description: t.featured.sitepowDesc,
       tech: "(Node.js + Bun.js Hybrid), Postgresql, Prisma, Redis, Next.js",
     },
   ];
@@ -19,7 +21,7 @@ export function FeaturedProjectsSection() {
     <Section imageFolder="featured-projects">
       <div className="text-white flex flex-col gap-4 backdrop-blur-md p-5">
         <h2 className="leading-tight font-bold text-5xl md:text-7xl">
-          Featured Projects
+          {t.featured.title}
         </h2>
 
         <ul className="grid gap-6">
@@ -33,10 +35,28 @@ export function FeaturedProjectsSection() {
                 <span className="text-sm text-white/40">{project.tech}</span>
               </div>
               <p className="text-white/60 text-lg">{project.description}</p>
-              <Button className={BUTTON_ClASS}>
-                <ArrowUpRight />{" "}
-                {project?.github ? "ดูโค๊ดบน Github" : "ดูเว็บไซต์"}
-              </Button>
+              {project.websiteUrl ? (
+                <a
+                  href={project.websiteUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-fit"
+                >
+                  <Button className={BUTTON_ClASS}>
+                    <ArrowUpRight />{" "}
+                    {project.github
+                      ? t.featured.viewGithub
+                      : t.featured.viewWebsite}
+                  </Button>
+                </a>
+              ) : (
+                <Button className={BUTTON_ClASS}>
+                  <ArrowUpRight />{" "}
+                  {project?.github
+                    ? t.featured.viewGithub
+                    : t.featured.viewWebsite}
+                </Button>
+              )}
             </li>
           ))}
         </ul>

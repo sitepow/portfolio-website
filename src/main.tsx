@@ -3,11 +3,14 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
 import { BrowserRouter } from "react-router-dom";
+import { I18nProvider } from "./context/i18n.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+      <I18nProvider>
+        <App />
+      </I18nProvider>
     </BrowserRouter>
   </StrictMode>,
 );

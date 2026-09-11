@@ -3,34 +3,36 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { LogoBrand } from "@/components/LogoBrand";
+import { useI18n } from "@/context/i18n";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useI18n();
 
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? "hidden" : "unset";
   }, [isMenuOpen]);
 
   const navItems = [
-    { title: "หน้าแรก", href: "/" },
-    { title: "เกี่ยวกับฉัน", href: "/about" },
-    { title: "ดาว์นโหลดเรซูเม่", href: "/download-resume" },
+    { title: t.nav.home, href: "/" },
+    { title: t.nav.about, href: "/about" },
+    { title: t.nav.resume, href: "/download-resume" },
   ];
 
   return (
-    <header className="backdrop-blur text-white fixed bg-neutral-900 top-0 z-50 w-full">
+    <header className="backdrop-blur text-white fixed bg-neutral-900/90 top-0 z-50 w-full border-b border-white/5">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <img
           src="/navbar/premium_photo-1689246621798-4e9cc4d07b13.jpeg"
           className="size-full object-cover opacity-40"
+          alt=""
         />
       </div>
 
       <nav className="container mx-auto flex items-center justify-between px-6 py-4">
-        <Link to="/" className="text-xl font-bold">
-          พอร์ตโฟลิโอ
-        </Link>
+        <LogoBrand />
 
         <div className="hidden md:flex items-center gap-6">
           {navItems.map((item) => (
@@ -42,16 +44,71 @@ export function Navbar() {
               {item.title}
             </Link>
           ))}
+
+          <div className="flex items-center rounded-full bg-white/10 p-1 border border-white/10 text-xs">
+            <button
+              type="button"
+              onClick={() => setLanguage("th")}
+              className={cn(
+                "px-2.5 py-0.5 rounded-full font-medium transition-colors cursor-pointer",
+                language === "th"
+                  ? "bg-primary text-white"
+                  : "text-white/60 hover:text-white",
+              )}
+            >
+              TH
+            </button>
+            <button
+              type="button"
+              onClick={() => setLanguage("en")}
+              className={cn(
+                "px-2.5 py-0.5 rounded-full font-medium transition-colors cursor-pointer",
+                language === "en"
+                  ? "bg-primary text-white"
+                  : "text-white/60 hover:text-white",
+              )}
+            >
+              EN
+            </button>
+          </div>
         </div>
 
-        <Button
-          variant="ghost"
-          size="icon"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden"
-        >
-          {isMenuOpen ? <X /> : <Menu />}
-        </Button>
+        <div className="flex items-center gap-3 md:hidden">
+          <div className="flex items-center rounded-full bg-white/10 p-0.5 border border-white/10 text-xs">
+            <button
+              type="button"
+              onClick={() => setLanguage("th")}
+              className={cn(
+                "px-2 py-0.5 rounded-full font-medium transition-colors",
+                language === "th"
+                  ? "bg-primary text-white"
+                  : "text-white/60 hover:text-white",
+              )}
+            >
+              TH
+            </button>
+            <button
+              type="button"
+              onClick={() => setLanguage("en")}
+              className={cn(
+                "px-2 py-0.5 rounded-full font-medium transition-colors",
+                language === "en"
+                  ? "bg-primary text-white"
+                  : "text-white/60 hover:text-white",
+              )}
+            >
+              EN
+            </button>
+          </div>
+
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X /> : <Menu />}
+          </Button>
+        </div>
       </nav>
 
       <div
