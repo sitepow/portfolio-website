@@ -2,7 +2,7 @@ import { useLandingImages } from "@/hooks/use-landing-images";
 import { cn } from "@/lib/utils";
 import type { ComponentProps } from "react";
 
-interface SectionProps extends ComponentProps<"div"> {
+interface SectionProps extends ComponentProps<"section"> {
   imageFolder?: string;
 }
 
@@ -15,9 +15,9 @@ export function Section({
   const { currentImage } = useLandingImages({ imageFolder });
 
   return (
-    <div
+    <section
       className={cn(
-        "min-h-screen px-5 flex flex-col py-10 justify-center items-center w-full bg-neutral-900 relative",
+        "min-h-screen px-5 flex flex-col py-10 justify-center items-center w-full bg-neutral-900 relative scroll-mt-20",
         className,
       )}
       {...props}
@@ -31,6 +31,6 @@ export function Section({
       </div>
 
       <div className="z-10 space-y-5 md:min-w-3xl md:max-w-3xl">{children}</div>
-    </div>
+    </section>
   );
 }

@@ -6,7 +6,7 @@ export function InterestedSection() {
   const { t } = useI18n();
 
   return (
-    <Section imageFolder="interested">
+    <Section id="interests" imageFolder="interested">
       <div className="text-white flex flex-col gap-4 backdrop-blur-md p-5">
         <h2 className="leading-tight font-bold text-5xl md:text-7xl">
           {t.interested.title}

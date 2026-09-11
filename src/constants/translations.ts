@@ -5,6 +5,11 @@ export const translations = {
     nav: {
       home: "หน้าแรก",
       about: "เกี่ยวกับฉัน",
+      interests: "ความสนใจ",
+      skills: "ทักษะ",
+      featuredProjects: "โปรเจกต์เด่น",
+      otherProjects: "โปรเจกต์อื่นๆ",
+      contact: "ติดต่อ",
       resume: "ดาว์นโหลดเรซูเม่",
     },
     greeting: {
@@ -62,7 +67,12 @@ export const translations = {
   en: {
     nav: {
       home: "Home",
-      about: "About Me",
+      about: "About",
+      interests: "Interests",
+      skills: "Skills",
+      featuredProjects: "Featured",
+      otherProjects: "Other Projects",
+      contact: "Contact",
       resume: "Download Resume",
     },
     greeting: {

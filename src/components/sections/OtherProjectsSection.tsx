@@ -23,7 +23,7 @@ export function OtherProjectsSection() {
   ];
 
   return (
-    <Section imageFolder="projects">
+    <Section id="other-projects" imageFolder="projects">
       <div className="text-white flex flex-col gap-4 backdrop-blur-md p-5">
         <h2 className="leading-tight font-bold text-5xl md:text-7xl">
           {t.otherProjects.title}

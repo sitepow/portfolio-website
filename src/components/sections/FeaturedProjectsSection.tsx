@@ -18,7 +18,7 @@ export function FeaturedProjectsSection() {
   ];
 
   return (
-    <Section imageFolder="featured-projects">
+    <Section id="featured-projects" imageFolder="featured-projects">
       <div className="text-white flex flex-col gap-4 backdrop-blur-md p-5">
         <h2 className="leading-tight font-bold text-5xl md:text-7xl">
           {t.featured.title}
@@ -44,17 +44,13 @@ export function FeaturedProjectsSection() {
                 >
                   <Button className={BUTTON_ClASS}>
                     <ArrowUpRight />{" "}
-                    {project.github
-                      ? t.featured.viewGithub
-                      : t.featured.viewWebsite}
+                    {project.github ? t.featured.viewGithub : t.featured.viewWebsite}
                   </Button>
                 </a>
               ) : (
                 <Button className={BUTTON_ClASS}>
                   <ArrowUpRight />{" "}
-                  {project?.github
-                    ? t.featured.viewGithub
-                    : t.featured.viewWebsite}
+                  {project?.github ? t.featured.viewGithub : t.featured.viewWebsite}
                 </Button>
               )}
             </li>

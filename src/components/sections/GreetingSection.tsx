@@ -9,8 +9,18 @@ export function GreetingSection() {
   const { t } = useI18n();
 
   return (
-    <Section imageFolder="greeting" className="pt-40 ">
-      <div className="text-white flex flex-col gap-4 backdrop-blur-md p-5">
+    <Section id="about" imageFolder="greeting" className="pt-40">
+      <div className="text-white flex flex-col gap-5 backdrop-blur-md p-5 rounded-2xl">
+        <div className="flex items-center">
+          <div className="relative size-28 sm:size-32 md:size-36 rounded-full ring-2 ring-primary/40 ring-offset-2 ring-offset-neutral-900 overflow-hidden shadow-2xl">
+            <img
+              src="/54900.jpg"
+              alt={t.greeting.name}
+              className="size-full object-top object-cover"
+            />
+          </div>
+        </div>
+
         <h1 className="leading-tight font-bold text-5xl md:text-7xl">
           {t.greeting.role}
         </h1>

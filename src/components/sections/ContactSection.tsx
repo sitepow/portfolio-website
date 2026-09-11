@@ -21,7 +21,7 @@ export function ContactSection() {
   const { t } = useI18n();
 
   return (
-    <Section imageFolder="contact">
+    <Section id="contact" imageFolder="contact">
       <div className="text-white flex flex-col gap-8 p-5 backdrop-blur-md">
         <div className="flex flex-col gap-2">
           <h1 className="leading-tight font-bold text-5xl md:text-7xl">

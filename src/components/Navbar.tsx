@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -9,6 +8,7 @@ import { cn } from "@/lib/utils";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>("about");
   const { language, setLanguage, t } = useI18n();
 
   useEffect(() => {
@@ -16,10 +16,66 @@ export function Navbar() {
   }, [isMenuOpen]);
 
   const navItems = [
-    { title: t.nav.home, href: "/" },
-    { title: t.nav.about, href: "/about" },
-    { title: t.nav.resume, href: "/download-resume" },
+    { id: "about", title: t.nav.about, href: "#about" },
+    { id: "interests", title: t.nav.interests, href: "#interests" },
+    { id: "skills", title: t.nav.skills, href: "#skills" },
+    {
+      id: "featured-projects",
+      title: t.nav.featuredProjects,
+      href: "#featured-projects",
+    },
+    {
+      id: "other-projects",
+      title: t.nav.otherProjects,
+      href: "#other-projects",
+    },
+    { id: "contact", title: t.nav.contact, href: "#contact" },
   ];
+
+  const scrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    e.preventDefault();
+    const id = href.replace("#", "");
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      history.replaceState(null, "", href);
+    }
+    setIsMenuOpen(false);
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        rootMargin: "-20% 0px -60% 0px",
+      },
+    );
+
+    const sectionIds = [
+      "about",
+      "interests",
+      "skills",
+      "featured-projects",
+      "other-projects",
+      "contact",
+    ];
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <header className="backdrop-blur text-white fixed bg-neutral-900/90 top-0 z-50 w-full border-b border-white/5">
@@ -32,20 +88,33 @@ export function Navbar() {
       </div>
 
       <nav className="container mx-auto flex items-center justify-between px-6 py-4">
-        <LogoBrand />
+        <LogoBrand
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            history.replaceState(null, "", " ");
+            setIsMenuOpen(false);
+          }}
+        />
 
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-3 lg:gap-5 xl:gap-6">
           {navItems.map((item) => (
-            <Link
+            <a
               key={item.href}
-              to={item.href}
-              className="text-sm font-medium hover:text-primary transition-colors"
+              href={item.href}
+              onClick={(e) => scrollToSection(e, item.href)}
+              className={cn(
+                "text-xs lg:text-sm font-medium transition-colors hover:text-primary",
+                activeSection === item.id
+                  ? "text-primary font-bold"
+                  : "text-white/70",
+              )}
             >
               {item.title}
-            </Link>
+            </a>
           ))}
 
-          <div className="flex items-center rounded-full bg-white/10 p-1 border border-white/10 text-xs">
+          <div className="flex items-center rounded-full bg-white/10 p-1 border border-white/10 text-xs ml-1">
             <button
               type="button"
               onClick={() => setLanguage("th")}
@@ -113,22 +182,27 @@ export function Navbar() {
 
       <div
         className={cn(
-          "bg-background absolute text-foreground left-0 top-full w-full border-b transition-all duration-300 md:hidden",
+          "bg-neutral-900/95 backdrop-blur-lg absolute text-white left-0 top-full w-full border-b border-white/10 transition-all duration-300 md:hidden",
           isMenuOpen
             ? "max-h-screen opacity-100"
             : "max-h-0 opacity-0 overflow-hidden",
         )}
       >
-        <div className="flex flex-col p-6 gap-4">
+        <div className="flex flex-col p-6 gap-2">
           {navItems.map((item) => (
-            <Link
+            <a
               key={item.href}
-              to={item.href}
-              onClick={() => setIsMenuOpen(false)}
-              className="text-lg font-semibold py-2 border-b"
+              href={item.href}
+              onClick={(e) => scrollToSection(e, item.href)}
+              className={cn(
+                "text-base font-semibold py-2.5 border-b border-white/10 transition-colors",
+                activeSection === item.id
+                  ? "text-primary"
+                  : "text-white/80 hover:text-white",
+              )}
             >
               {item.title}
-            </Link>
+            </a>
           ))}
         </div>
       </div>
