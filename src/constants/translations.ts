@@ -62,7 +62,7 @@ export const translations = {
       emailLabel: "ส่งอีเมลถึงผม",
       otherChannels: "ช่องทางอื่นๆ",
     },
-    docTitle: "พอร์ตโฟลิโอ - ธีรพัฒน์ แสงก่ำ (Web Developer)",
+    docTitle: "ธีรพัฒน์ แสงก่ำ | Full-Stack Developer",
   },
   en: {
     nav: {
@@ -125,7 +125,7 @@ export const translations = {
       emailLabel: "Send me an email",
       otherChannels: "Other Channels",
     },
-    docTitle: "Portfolio - Teeraphat Saengkam (Web Developer)",
+    docTitle: "Teeraphat Saengkum | Full-Stack Developer",
   },
 };
 
