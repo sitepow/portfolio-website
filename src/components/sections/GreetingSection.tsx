@@ -10,7 +10,7 @@ export function GreetingSection() {
 
   return (
     <Section id="about" imageFolder="greeting" className="pt-40">
-      <div className="text-white flex flex-col gap-5 backdrop-blur-md p-5 rounded-2xl">
+      <div className="text-white flex flex-col gap-5 backdrop-blur-md p-5">
         <h1 className="leading-tight font-bold text-5xl md:text-7xl">
           {t.greeting.role}
         </h1>
