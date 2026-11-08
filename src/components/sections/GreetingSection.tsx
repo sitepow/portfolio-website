@@ -10,37 +10,40 @@ export function GreetingSection() {
 
   return (
     <Section id="about" imageFolder="greeting" className="pt-40">
-      <div className="text-white flex flex-col gap-5 backdrop-blur-md p-5">
-        <h1 className="leading-tight font-bold text-5xl md:text-7xl">
-          {t.greeting.role}
-        </h1>
-
-        <h2 className="-mt-3 max-w-2xl gap-2.5 text-xl font-medium text-white/60 sm:text-2xl">
-          {t.greeting.introBeforeName}{" "}
-          <HighlightWording>{t.greeting.name}</HighlightWording>{" "}
-          {t.greeting.introAfterName}
-          <br />
-          .
-          <br />
-          {t.greeting.platformIntro}{" "}
-          <HighlightWording url="https://sitepow.store">
-            {t.greeting.platformName}
-          </HighlightWording>{" "}
-          {t.greeting.platformAfter}
-        </h2>
+      <div className="flex flex-col items-center gap-5">
+        <div className="flex items-center gap-5 text-white">
+          <div className="size-32 rounded-full border-4 border-white overflow-hidden">
+            <img
+              src="/528e200b-4f2e-408f-b1b6-3f705e46afa7.jpg"
+              className="size-full object-bottom object-cover scale-[180%]"
+            />
+          </div>
+          <span>X</span>
+          <div className="size-32 rounded-full border-4 border-white overflow-hidden">
+            <img
+              src="/842916578_122110731159489577_4212715032094923571_n.jpg"
+              className="size-full object-bottom object-cover"
+            />
+          </div>
+        </div>
+        <div className="text-white flex text-center flex-col gap-5 backdrop-blur-md p-5">
+          <h2 className="max-w-2xl gap-2.5 text-xl font-medium text-white/60 sm:text-2xl">
+            {t.greeting.introBeforeName}{" "}
+            <HighlightWording>{t.greeting.name}</HighlightWording>{" "}
+            {t.greeting.introAfterName}
+          </h2>
+        </div>
       </div>
 
-      <div className="flex gap-2.5 flex-wrap">
+      <div className="flex gap-2.5 justify-center flex-wrap">
         <Button className={BUTTON_ClASS}>
           <DownloadIcon />
           {t.greeting.btnResume}
         </Button>
-
         <Button className={BUTTON_ClASS}>
           <DownloadIcon />
           {t.greeting.btnTranscript}
         </Button>
-
         <Button className={BUTTON_ClASS}>
           <ArrowUpRight />
           {t.greeting.btnGithub}

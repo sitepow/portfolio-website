@@ -1,4 +1,3 @@
-import { useLandingImages } from "@/hooks/use-landing-images";
 import { cn } from "@/lib/utils";
 import type { ComponentProps } from "react";
 
@@ -12,8 +11,6 @@ export function Section({
   children,
   ...props
 }: SectionProps) {
-  const { currentImage } = useLandingImages({ imageFolder });
-
   return (
     <section
       className={cn(
@@ -22,14 +19,6 @@ export function Section({
       )}
       {...props}
     >
-      <div className="absolute inset-0 z-0">
-        <div
-          key={currentImage}
-          className="animate-in fade-in absolute inset-0 size-full bg-cover bg-center opacity-40 duration-1000"
-          style={{ backgroundImage: `url('${currentImage}')` }}
-        />
-      </div>
-
       <div className="z-10 space-y-5 md:min-w-3xl md:max-w-3xl">{children}</div>
     </section>
   );

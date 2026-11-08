@@ -17,11 +17,10 @@ export function LogoBrand({ className, to = "/", ...props }: LogoBrandProps) {
       )}
       {...props}
     >
-      <div className="relative">
-        <span>Teeraphat Saengkum</span>
-        <span className="absolute -top-2.5 right-0 text-[10px] sm:text-xs font-medium tracking-normal uppercase">
-          Portfolio
-        </span>
+      <div className="relative flex items-center gap-1">
+        <span className="text-primary text-3xl font-light">{`{`}</span>
+        <span className="text-white text-2xl font-bold">T</span>
+        <span className="text-primary text-3xl font-light">{`}`}</span>
       </div>
     </Link>
   );

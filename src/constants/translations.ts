@@ -10,21 +10,26 @@ export const translations = {
       featuredProjects: "โปรเจกต์เด่น",
       otherProjects: "โปรเจกต์อื่นๆ",
       contact: "ติดต่อ",
-      resume: "ดาว์นโหลดเรซูเม่",
+      resume: "ดาวน์โหลดเรซูเม่",
     },
     greeting: {
-      role: "Web Developer",
-      introBeforeName: "สวัสดีครับผมชื่อ",
-      name: "นายธีรพัฒน์ แสงก่ำ",
-      introAfterName: "ชื่อเล่นว่าตุ้ย มีความรู้และความสามารถในการเขียนและออกแบบเว็บไซต์ ไม่ว่าจะเป็นการเขียนโค๊ด UX/UI ของหน้าจอ หรือจะเป็นการเขียนโค๊ดหลังบ้านใน Server เพื่อใช้ในการติดต่อบันทึกลงฐานข้อมูลก็สามารถทำได้เช่นกัน",
-      platformIntro: "ปัจุบันเป็นเจ้าของแพลตฟอร์ม ให้เช่าร้านค้าออนไลน์ ที่ชื่อว่า",
+      headlinePrefix: "Building ",
+      headlineHighlight: "modern web applications",
+      headlineSuffix: " and scalable platforms.",
+      role: "Full-Stack Developer",
+      nickname: "ตุ้ย",
+      introBeforeName: "สวัสดีครับ ผม",
+      name: "ธีรพัฒน์ แสงก่ำ",
+      introAfterName:
+        "นักพัฒนาเว็บที่หลงใหลในการสร้างสรรค์ระบบตั้งแต่หน้าจอ UX/UI ไปจนถึง Architecture หลังบ้านและการบริหารจัดการฐานข้อมูล",
+      platformIntro: "ผู้ก่อตั้งและพัฒนาแพลตฟอร์มเช่าร้านค้าออนไลน์",
       platformName: "Sitepow Store",
-      platformAfter: "ซึ่งตอนนี้ก็กำลังอยู่ในช่วงพัฒนาระบบอย่างต่อเนื่อง",
-      btnResume: "ดาว์นโหลดเรซูเม่",
-      btnTranscript: "ดาว์นโหลดวุฒิการศึกษา",
-      btnGithub: "ดูโค๊ดบน Github",
+      platformAfter: "ระบบเพื่อพ่อค้าแม่ค้าไทยที่กำลังเติบโตอย่างต่อเนื่อง",
+      btnResume: "ดาวน์โหลดเรซูเม่",
+      btnTranscript: "ดาวน์โหลดวุฒิการศึกษา",
+      btnGithub: "ดูโค้ดบน GitHub",
       btnFastwork: "จ้างงานผ่าน Fastwork",
-      btnJobThai: "ดูข้อมูลผ่าน JobThai",
+      btnJobThai: "ดูข้อมูลบน JobThai",
     },
     interested: {
       title: "What I'm interested in right now.",
@@ -32,8 +37,10 @@ export const translations = {
       highlight1: "Cyber Security",
       text2: "และกำลังศึกษาการทำ",
       highlight2: "Reverse engineering",
-      text3: "โดยใช้ Ghidra ในการแปลงจากภาษา Assembly ให้กลายเป็นภาษา C ซึ่งจะช่วยให้ Debug ได้ง่าย และหาจุดแก้ไขได้ตามที่เราต้องการหรือจะศึกษาพฤติกรรมของโปรแกรม",
-      highlight3: "ซึ่งก็เป็นอีกจุดนึง ที่ช่วยให้เราเข้าใจการทำงานของโปรแกรม ว่าจะป้องกันยังไงไม่ให้โดนแฮ็ก",
+      text3:
+        "โดยใช้ Ghidra ในการแปลงจากภาษา Assembly ให้กลายเป็นภาษา C ซึ่งจะช่วยให้ Debug ได้ง่าย และหาจุดแก้ไขได้ตามที่เราต้องการหรือจะศึกษาพฤติกรรมของโปรแกรม",
+      highlight3:
+        "ซึ่งก็เป็นอีกจุดหนึ่ง ที่ช่วยให้เราเข้าใจการทำงานของโปรแกรม ว่าจะป้องกันยังไงไม่ให้โดนแฮ็ก",
     },
     skills: {
       title: "My Skills",
@@ -46,19 +53,23 @@ export const translations = {
     },
     featured: {
       title: "Featured Projects",
-      sitepowDesc: "แพลตฟอร์มเปิดให้เช่าหน้าเว็บร้านค้าออนไลน์เป็นของตัวเอง เพิ่มความหน้าเชื่อถือของร้านค้า และสามารถจัดการสต็อก/ออเดอร์ได้ง่ายๆ พร้อมสามารถตั้งค่าราคาขนส่งได้เองตามต้องการ (Rate Matrix + Big Data ค่าส่งจากผู้ให้บริการคำนวนมาให้แล้วเป็นค่าเริ่มต้นระบบ) ซึ่งออกมาเพื่อแก้ปัญหาร้านค้าโดนค่าธรรมเนียมระบบแพลตฟอร์มต่างชาติที่แพงมากเกินไป ปัจจุบันก็กำลังอยู่ในช่วงพัฒนาระบบอย่างต่อเนื่อง",
+      sitepowDesc:
+        "แพลตฟอร์มเปิดให้เช่าหน้าเว็บร้านค้าออนไลน์ เพิ่มความน่าเชื่อถือของร้านค้า และจัดการสต็อก/ออเดอร์ได้ง่าย พร้อมคำนวณราคาขนส่งอัตโนมัติ ออกแบบมาเพื่อแก้ปัญหาค่าธรรมเนียมแพลตฟอร์มต่างชาติที่แพงเกินไป",
       viewWebsite: "ดูเว็บไซต์",
-      viewGithub: "ดูโค๊ดบน Github",
+      viewGithub: "ดูโค้ดบน GitHub",
     },
     otherProjects: {
       title: "Other Projects",
-      elearningDesc: "ระบบการเรียนรู้ออนไลน์ โปรเจกต์จบจากมหาวิทยาลัยราชภัฏธนบุรี สมุทรปราการ (สาขาวิทยาการคอมพิวเตอร์)",
-      erpDesc: "ระบบบริหารจัดการทรัพยากรและกระบวนการทำงานทั้งหมดขององค์กร แผนกต่างๆ เช่น การเงิน, บัญชี, คลังสินค้า, การผลิต, จัดซื้อ และฝ่ายบุคคล ให้ทำงานร่วมกันได้อย่างมีประสิทธิภาพ",
-      viewGithub: "ดูโค๊ดบน Github",
+      elearningDesc:
+        "ระบบการเรียนรู้ออนไลน์ โปรเจกต์จบจากมหาวิทยาลัยราชภัฏธนบุรี สมุทรปราการ (สาขาวิทยาการคอมพิวเตอร์)",
+      erpDesc:
+        "ระบบบริหารจัดการทรัพยากรและกระบวนการทำงานทั้งหมดขององค์กร แผนกต่างๆ เช่น การเงิน, บัญชี, คลังสินค้า, การผลิต, จัดซื้อ และฝ่ายบุคคล",
+      viewGithub: "ดูโค้ดบน GitHub",
     },
     contact: {
       title: "Contact",
-      description: "สนใจร่วมงานหรือสอบถามข้อมูลเพิ่มเติม สามารถติดต่อได้ที่ช่องทางด้านล่างนี้ครับ",
+      description:
+        "สนใจร่วมงานหรือสอบถามข้อมูลเพิ่มเติม สามารถติดต่อได้ที่ช่องทางด้านล่างนี้ครับ",
       emailLabel: "ส่งอีเมลถึงผม",
       otherChannels: "ช่องทางอื่นๆ",
     },
@@ -76,18 +87,24 @@ export const translations = {
       resume: "Download Resume",
     },
     greeting: {
-      role: "Web Developer",
-      introBeforeName: "Hello, my name is",
-      name: "Mr. Teeraphat Saengkam",
-      introAfterName: "(Tui). I have strong expertise in web development and design — covering both UX/UI frontend development and robust backend server systems for database communications and integrations.",
-      platformIntro: "Currently, I am the founder and creator of an online e-commerce platform called",
+      headlinePrefix: "Building ",
+      headlineHighlight: "modern web applications",
+      headlineSuffix: " and scalable platforms.",
+      role: "Full-Stack Developer",
+      nickname: "Tui",
+      introBeforeName: "Hi, I'm ",
+      name: "Teeraphat Saengkum",
+      introAfterName:
+        "a Web Developer passionate about building end-to-end digital experiences — from intuitive UX/UI design to robust backend servers and database management.",
+      platformIntro: "Founder and Lead Developer of ",
       platformName: "Sitepow Store",
-      platformAfter: "which is actively and continuously being developed.",
+      platformAfter:
+        ", an e-commerce platform built to help online merchants thrive.",
       btnResume: "Download Resume",
       btnTranscript: "Download Academic Record",
-      btnGithub: "View Code on GitHub",
+      btnGithub: "GitHub Profile",
       btnFastwork: "Hire via Fastwork",
-      btnJobThai: "View on JobThai",
+      btnJobThai: "JobThai Profile",
     },
     interested: {
       title: "What I'm interested in right now.",
@@ -95,8 +112,10 @@ export const translations = {
       highlight1: "Cyber Security",
       text2: "and actively studying",
       highlight2: "Reverse Engineering",
-      text3: "using Ghidra to decompile Assembly into C code. This makes debugging and behavioral analysis much easier,",
-      highlight3: "giving a deep understanding of software internals and how to defend systems from vulnerabilities.",
+      text3:
+        "using Ghidra to decompile Assembly into C code. This makes debugging and behavioral analysis much easier,",
+      highlight3:
+        "giving a deep understanding of software internals and how to defend systems from vulnerabilities.",
     },
     skills: {
       title: "My Skills",
@@ -109,19 +128,23 @@ export const translations = {
     },
     featured: {
       title: "Featured Projects",
-      sitepowDesc: "An e-commerce SaaS platform allowing merchants to launch their own branded web stores, enhance brand credibility, and seamlessly manage inventory/orders. It features customizable shipping calculations (Rate Matrix + pre-calculated carrier logistics data) built to solve high foreign platform commissions. Actively in development.",
+      sitepowDesc:
+        "An e-commerce SaaS platform allowing merchants to launch branded web stores, manage inventory/orders, and handle automated shipping logic — solving high marketplace commissions.",
       viewWebsite: "Visit Website",
       viewGithub: "View Code on GitHub",
     },
     otherProjects: {
       title: "Other Projects",
-      elearningDesc: "Online Learning System, graduation capstone project from Dhonburi Rajabhat University Samut Prakan (Computer Science).",
-      erpDesc: "Enterprise Resource Planning system managing all core business processes and cross-functional operations across Finance, Accounting, Inventory, Manufacturing, Procurement, and HR.",
+      elearningDesc:
+        "Online Learning System, graduation capstone project from Dhonburi Rajabhat University Samut Prakan (Computer Science).",
+      erpDesc:
+        "Enterprise Resource Planning system managing all core business processes across Finance, Accounting, Inventory, Manufacturing, Procurement, and HR.",
       viewGithub: "View Code on GitHub",
     },
     contact: {
       title: "Contact",
-      description: "Interested in collaborating or have any questions? Feel free to reach out through any of the channels below.",
+      description:
+        "Interested in collaborating or have any questions? Feel free to reach out through any of the channels below.",
       emailLabel: "Send me an email",
       otherChannels: "Other Channels",
     },
