@@ -1,20 +1,18 @@
 import { Layout } from "./components/Layout";
-// import { ContactSection } from "./components/sections/ContactSection";
-// import { FeaturedProjectsSection } from "./components/sections/FeaturedProjectsSection";
+import { AboutMeSection } from "./components/sections/AboutMeSection";
+import { ExperienceSection } from "./components/sections/ExperienceSection";
+import { FeaturedProjectsSection } from "./components/sections/FeaturedProjectsSection";
+import { GetInTouchSection } from "./components/sections/GetInTouchSection";
 import { GreetingSection } from "./components/sections/GreetingSection";
-// import { InterestedSection } from "./components/sections/InterestedSection";
-// import { OtherProjectsSection } from "./components/sections/OtherProjectsSection";
-// import { SkillSection } from "./components/sections/SkillSection";
 
 function App() {
   return (
     <Layout>
       <GreetingSection />
-      {/* <InterestedSection />
-      <SkillSection />
       <FeaturedProjectsSection />
-      <OtherProjectsSection />
-      <ContactSection /> */}
+      <ExperienceSection />
+      <AboutMeSection />
+      <GetInTouchSection />
     </Layout>
   );
 }

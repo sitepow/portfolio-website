@@ -14,12 +14,12 @@ export function Section({
   return (
     <section
       className={cn(
-        "min-h-screen px-5 flex flex-col py-10 justify-center items-center w-full bg-neutral-900 relative scroll-mt-20",
+        "p-5 flex flex-col justify-center items-center w-full bg-neutral-900 relative scroll-mt-20",
         className,
       )}
       {...props}
     >
-      <div className="z-10 space-y-5 md:min-w-3xl md:max-w-3xl">{children}</div>
+      {children}
     </section>
   );
 }
