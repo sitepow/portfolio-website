@@ -77,6 +77,15 @@ export function ProjectsSection() {
       alertMessage:
         "This repo was archived by the owner on Nov 7, 2026. It is now read-only.",
     },
+    {
+      name: "Portfolio Website",
+      github: "https://github.com/sitepow/portfolio-website",
+      websiteUrl: "",
+      description:
+        "Professional personal portfolio website built with Vite, React, TypeScript, Tailwind CSS, and Shadcn UI to showcase software development projects and skills.",
+      techStack: ["Vite", "React", "TypeScript", "Tailwind CSS", "Shadcn UI"],
+      image: "/navbar/premium_photo-1689246621798-4e9cc4d07b13.jpeg",
+    },
   ];
 
   return (

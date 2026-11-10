@@ -17,7 +17,7 @@ export function GreetingSection() {
                 alt="Profile 1"
               />
             </div>
-            <span>X</span>
+            <span className="font-homeplace">X</span>
             <div className="size-24 sm:size-32 rounded-full border-4 border-white overflow-hidden">
               <img
                 src="/842916578_122110731159489577_4212715032094923571_n.jpg"
@@ -27,7 +27,7 @@ export function GreetingSection() {
             </div>
           </div>
           <div className="text-emerald-400 flex text-center flex-col gap-5 backdrop-blur-md py-2.5 sm:p-5">
-            <h2 className="max-w-2xl gap-2.5 text-xl font-medium text-white/80 sm:text-2xl">
+            <h2 className="max-w-2xl gap-2.5 text-xl text-white/80 sm:text-2xl">
               Hi, I&apos;m{" "}
               <HighlightWording>Teeraphat Saengkum</HighlightWording>, a Web
               Developer passionate about building end-to-end digital experiences
