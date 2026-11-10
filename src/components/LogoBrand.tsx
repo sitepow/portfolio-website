@@ -18,9 +18,9 @@ export function LogoBrand({ className, to = "/", ...props }: LogoBrandProps) {
       {...props}
     >
       <div className="relative flex items-center gap-1">
-        <span className="text-primary text-3xl font-light">{`{`}</span>
+        <span className="text-emerald-400 text-3xl font-light">{`{`}</span>
         <span className="text-white text-2xl font-bold">T</span>
-        <span className="text-primary text-3xl font-light">{`}`}</span>
+        <span className="text-emerald-400 text-3xl font-light">{`}`}</span>
       </div>
     </Link>
   );

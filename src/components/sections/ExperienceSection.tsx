@@ -11,24 +11,24 @@ interface ExperienceItem {
 export function ExperienceSection() {
   const experiences: ExperienceItem[] = [
     {
-      company: "Zentracore / Sitepow",
-      role: "Full Stack Developer & Owner",
-      period: "2024 - Present",
+      company: "ProFlow Labs",
+      role: "Full Stack Web Developer",
+      period: "Dec 2023 - May 2024",
       description:
-        "Architected and deployed SaaS web applications and e-commerce platforms using Next.js, Node.js, and PostgreSQL. Managed server infrastructure, database performance, and API integrations with payment gateways.",
+        "Developed a mission-critical Real-time Omni-channel CRM centralizing Telegram and Line interactions into a single interface. Managed end-to-end development for client projects (Giftwise, Salebuddy, ATHGold) and established standardized Git workflows to elevate team code quality.",
     },
     {
-      company: "Proflowlabs",
-      role: "Software Developer",
-      period: "2023 - 2024",
+      company: "Brainwave Group",
+      role: "Full Stack Web Developer",
+      period: "June 2022 - May 2023",
       description:
-        "Developed responsive UI components, integrated complex state management, and collaborated via Agile/Jira workflows to deliver production-ready features on schedule.",
+        "Designed and maintained key ERP modules for Maintenance Departments with a focus on system reliability. Contributed to large-scale insurance web platforms and played a key role in identifying and resolving critical production bugs to reduce downtime.",
     },
   ];
 
   return (
-    <Section id="featured-projects" imageFolder="featured-projects">
-      <div className="text-white flex flex-col gap-8 backdrop-blur-md p-5 md:p-10">
+    <Section id="experience">
+      <div className="text-white flex flex-col gap-8 backdrop-blur-md py-5 px-2.5 md:p-10">
         <div className="flex items-center gap-3">
           <div className="p-2 rounded-lg bg-white/5 border border-white/10">
             <Briefcase className="size-5 text-white/80" />

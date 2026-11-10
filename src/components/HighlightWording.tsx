@@ -6,10 +6,10 @@ interface HighlightWordingProps extends PropsWithChildren {
 
 export function HighlightWording({ url, children }: HighlightWordingProps) {
   return url ? (
-    <a className="text-white underline" href={url} target="_blank">
+    <a className="text-emerald-400 underline" href={url} target="_blank">
       {children}
     </a>
   ) : (
-    <span className="text-white">{children}</span>
+    <span className="text-emerald-400">{children}</span>
   );
 }
