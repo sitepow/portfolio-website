@@ -31,7 +31,11 @@ export function GetInTouchSection() {
                 Email
               </Button>
             </a>
-            <a href="/resume.pdf" target="_blank" rel="noreferrer">
+            <a
+              href="/Resume_Full_Stack_Developer.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Button className="bg-white text-black hover:bg-white/90 font-medium px-6 py-2.5 rounded-xl flex items-center gap-2 transition-all">
                 <Download className="size-4" />
                 Resume

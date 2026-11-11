@@ -11,14 +11,14 @@ interface ExperienceItem {
 export function ExperienceSection() {
   const experiences: ExperienceItem[] = [
     {
-      company: "ProFlow Labs",
+      company: "PROFLOW LABS CO., LTD",
       role: "Full Stack Web Developer",
       period: "Dec 2023 - May 2024",
       description:
         "Developed a mission-critical Real-time Omni-channel CRM centralizing Telegram and Line interactions into a single interface. Managed end-to-end development for client projects (Giftwise, Salebuddy, ATHGold) and established standardized Git workflows to elevate team code quality.",
     },
     {
-      company: "Brainwave Group",
+      company: "BRAINWAVE GROUP CO. LTD",
       role: "Full Stack Web Developer",
       period: "June 2022 - May 2023",
       description:
@@ -50,7 +50,7 @@ export function ExperienceSection() {
                 <div className="absolute -left-1.25 md:-left-0.75 top-2.5 w-3.5 h-3.5 rounded-full bg-emerald-500 ring-4 ring-[#0a0a0a]" />
 
                 <div className="md:col-span-5 flex flex-col gap-1">
-                  <h3 className="text-emerald-400  text-lg md:text-xl font-medium">
+                  <h3 className="text-emerald-400 text-lg md:text-xl font-medium">
                     {exp.company}
                   </h3>
                   <p className="text-white  text-base font-semibold">

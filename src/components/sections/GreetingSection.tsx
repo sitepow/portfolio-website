@@ -37,7 +37,11 @@ export function GreetingSection() {
           </div>
         </div>
         <div className="flex gap-2.5 justify-center flex-wrap">
-          <a href="/resume.pdf" target="_blank" rel="noreferrer">
+          <a
+            href="/Resume_Full_Stack_Developer.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button className={BUTTON_ClASS}>
               <DownloadIcon />
               Download Resume
