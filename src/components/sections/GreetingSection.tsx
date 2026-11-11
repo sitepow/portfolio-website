@@ -17,7 +17,7 @@ export function GreetingSection() {
                 alt="Profile 1"
               />
             </div>
-            <span className="font-homeplace">X</span>
+            <span>X</span>
             <div className="size-24 sm:size-32 rounded-full border-4 border-white overflow-hidden">
               <img
                 src="/842916578_122110731159489577_4212715032094923571_n.jpg"
