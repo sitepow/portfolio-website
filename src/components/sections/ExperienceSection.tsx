@@ -18,7 +18,7 @@ export function ExperienceSection() {
         "Developed a mission-critical Real-time Omni-channel CRM centralizing Telegram and Line interactions into a single interface. Managed end-to-end development for client projects (Giftwise, Salebuddy, ATHGold) and established standardized Git workflows to elevate team code quality.",
     },
     {
-      company: "BRAINWAVE GROUP CO. LTD",
+      company: "BRAINWAVE GROUP CO., LTD",
       role: "Full Stack Web Developer",
       period: "June 2022 - May 2023",
       description:
