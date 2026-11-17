@@ -28,11 +28,10 @@ export function GreetingSection() {
           </div>
           <div className="text-emerald-400 flex text-center flex-col gap-5 backdrop-blur-md py-2.5 sm:p-5">
             <h2 className="max-w-2xl gap-2.5 text-xl text-white/80 sm:text-2xl">
-              Hi, I&apos;m{" "}
-              <HighlightWording>Teeraphat Saengkum</HighlightWording>, a Web
-              Developer passionate about building end-to-end digital experiences
-              — from intuitive UX/UI design to robust backend servers and
-              database management.
+              สวัสดีครับผม <HighlightWording>ธีรพัฒน์ แสงก่ำ</HighlightWording>{" "}
+              นักพัฒนาเว็บที่หลงใหลในการสร้างสรรค์ประสบการณ์ดิจิทัลแบบครบวงจร
+              ตั้งแต่การออกแบบ UX/UI ที่ใช้งานง่าย
+              ไปจนถึงระบบเซิร์ฟเวอร์หลังบ้านที่ทรงพลังและการจัดการฐานข้อมูลครับ
             </h2>
           </div>
         </div>
@@ -44,19 +43,23 @@ export function GreetingSection() {
           >
             <Button className={BUTTON_ClASS}>
               <DownloadIcon />
-              Download Resume
+              ดาวน์โหลด เรซูเม่
             </Button>
           </a>
-          <a href="https://github.com/sitepow" target="_blank">
+          <a href="https://github.com/sitepow" target="_blank" rel="noreferrer">
             <Button className={BUTTON_ClASS}>
               <ArrowUpRight />
-              GitHub Profile
+              โปรไฟล์ GitHub
             </Button>
           </a>
-          <a href="https://fastwork.com/th/user/ejmfeo" target="_blank">
+          <a
+            href="https://fastwork.com/th/user/ejmfeo"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button className={BUTTON_ClASS}>
               <ArrowUpRight />
-              Hire via Fastwork.com
+              จ้างงานผ่าน Fastwork
             </Button>
           </a>
         </div>

@@ -11,44 +11,47 @@ export function AboutMeSection() {
             <User className="size-5 text-white/80" />
           </div>
           <h2 className="text-xl md:text-2xl font-semibold tracking-wide">
-            About Me
+            เกี่ยวกับฉัน
           </h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-8 flex flex-col gap-6 text-white/80 text-base md:text-lg leading-relaxed">
             <p>
-              I&apos;m <HighlightWording>Teeraphat Saengkum</HighlightWording>,
-              a <HighlightWording>Full-Stack Developer</HighlightWording>{" "}
-              specializing in designing, developing, and maintaining{" "}
+              สวัสดีครับผม <HighlightWording>ธีรพัฒน์ แสงก่ำ</HighlightWording>{" "}
+              เป็น <HighlightWording>Full-Stack Developer</HighlightWording>{" "}
+              ที่มีความเชี่ยวชาญด้านการออกแบบ พัฒนา และดูแลรักษา{" "}
               <HighlightWording>
-                high-performance web applications
-              </HighlightWording>
-              . Expertise in full-stack development using{" "}
-              <HighlightWording>
-                Next.js, React.js, and Node.js
-              </HighlightWording>
-              .
+                Web Application ประสิทธิภาพสูง (High-Performance)
+              </HighlightWording>{" "}
+              โดยมีประสบการณ์การพัฒนาแบบ Full-Stack ด้วยเครื่องมือหลักอย่าง{" "}
+              <HighlightWording>Next.js, React.js และ Node.js</HighlightWording>{" "}
+              ครับ
             </p>
 
             <p>
-              Proven ability to lead technical projects, implement{" "}
-              <HighlightWording>scalable system architectures</HighlightWording>
-              , and optimize database performance. Beyond standard web
-              engineering, I have a strong passion for building{" "}
-              <HighlightWording>automated trading bot engines</HighlightWording>{" "}
-              and exploring <HighlightWording>Cybersecurity</HighlightWording>{" "}
-              concepts such as reverse engineering.
+              ผมมีความสามารถในการร่วมขับเคลื่อนโปรเจกต์เชิงเทคนิค ออกแบบ{" "}
+              <HighlightWording>
+                โครงสร้างระบบที่รองรับการขยายตัว (Scalable System Architecture)
+              </HighlightWording>{" "}
+              และปรับแต่งประสิทธิภาพฐานข้อมูล นอกจากงานวิศวกรรมเว็บทั่วไปแล้ว
+              ผมยังมีความหลงใหลในการพัฒนา{" "}
+              <HighlightWording>
+                ระบบบอทเทรดอัตโนมัติ (Automated Trading Bot Engines)
+              </HighlightWording>{" "}
+              และสนใจศึกษาค้นคว้าเกี่ยวกับแนวคิด{" "}
+              <HighlightWording>Cybersecurity</HighlightWording> เช่น การทำ
+              Reverse Engineering อีกด้วยครับ
             </p>
 
             <p>
-              Passionate about writing clean, maintainable, and type-safe code
-              while delivering high-quality, impactful work that users and
-              clients can rely on.
+              ผมมุ่งมั่นที่จะเขียนโค้ดที่สะอาด อ่านง่าย บำรุงรักษาง่าย (Clean &
+              Maintainable Code) และมีความปลอดภัยสูง (Type-Safe)
+              เพื่อส่งมอบผลงานคุณภาพเยี่ยมที่มีคุณค่าและสร้างความมั่นใจให้กับผู้ใช้งานและลูกค้าทุกคน
             </p>
 
             <p className="text-white font-medium text-lg pt-2">
-              Let&apos;s Build Something Unforgettable! 🚀
+              มาสร้างสรรค์ผลงานที่น่าจดจำไปด้วยกันครับ! 🚀
             </p>
           </div>
 

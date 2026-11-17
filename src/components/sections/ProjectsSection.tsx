@@ -10,7 +10,7 @@ export function ProjectsSection() {
       github: "https://github.com/sitepow/alpha-nexus-bot",
       websiteUrl: "",
       description:
-        "Automated high-performance trading bot engine combining SMC, Price Action, and Momentum Breakout with intelligent multi-component scoring algorithms.",
+        "ระบบบอทเทรดอัตโนมัติประสิทธิภาพสูง ทำงานร่วมกับกลยุทธ์ SMC, Price Action และ Momentum Breakout พร้อมอัลกอริทึมการคำนวณคะแนนตัดสินใจแบบอัจฉริยะแบบ Multi-component",
       techStack: ["Python", "Trading Engine", "SMC", "Algorithms"],
       image: "/navbar/premium_photo-1689246621798-4e9cc4d07b13.jpeg",
     },
@@ -19,7 +19,7 @@ export function ProjectsSection() {
       github: "https://github.com/sitepow/nepalora",
       websiteUrl: "",
       description:
-        "Polyglot Monorepo Platform: An end-to-end Himalayan travel & trekking guide platform engineered across multiple production stacks.",
+        "แพลตฟอร์มไกด์นำเที่ยวและเดินเขาในเทือกเขาหิมาลัยแบบครบวงจร พัฒนาในรูปแบบ Polyglot Monorepo ด้วยเทคโนโลยีหลากหลายที่ใช้งานจริงบนระบบ Production",
       techStack: [
         "Next.js",
         "React/Vite",
@@ -35,7 +35,7 @@ export function ProjectsSection() {
       github: "https://github.com/sitepow/akra-construction-erp",
       websiteUrl: "",
       description:
-        "Enterprise Resource Planning (ERP) platform designed for construction management, tracking projects, resources, budgeting, and operations.",
+        "ระบบวางแผนและจัดการทรัพยากรองค์กร (ERP) ที่ออกแบบมาสำหรับธุรกิจก่อสร้างโดยเฉพาะ รองรับการติดตามสถานะโปรเจกต์ บริหารจัดการทรัพยากร วางงบประมาณ และควบคุมการปฏิบัติงาน",
       techStack: ["TypeScript", "Next.js", "Node.js", "ERP"],
       image: "/navbar/premium_photo-1689246621798-4e9cc4d07b13.jpeg",
     },
@@ -44,7 +44,7 @@ export function ProjectsSection() {
       github: "https://github.com/sitepow/bangphriang-sao-elearning",
       websiteUrl: "",
       description:
-        "E-Learning and digital education management platform for Bang Phriang Subdistrict Administrative Organization (SAO).",
+        "แพลตฟอร์มจัดการเรียนรู้ออนไลน์และระบบการศึกษาดิจิทัล สำหรับองค์การบริหารส่วนตำบลบางเพรียง (อบต. บางเพรียง)",
       techStack: ["TypeScript", "Next.js", "React", "Redux", "Tailwind CSS"],
       image: "/navbar/premium_photo-1689246621798-4e9cc4d07b13.jpeg",
     },
@@ -53,7 +53,7 @@ export function ProjectsSection() {
       github: "https://github.com/sitepow/sitepow-store",
       websiteUrl: "",
       description:
-        "Next-gen e-commerce SaaS platform with an integrated POS system, built with modern web stacks and payment gateway integrations.",
+        "แพลตฟอร์มอีคอมเมิร์ซแบบ SaaS ยุคใหม่ พร้อมระบบขายหน้าร้าน (POS) ในตัว พัฒนาด้วยเว็บเทคโนโลยีที่ทันสมัยและเชื่อมต่อกับระบบชำระเงินออนไลน์",
       techStack: [
         "TypeScript",
         "Next.js",
@@ -64,25 +64,25 @@ export function ProjectsSection() {
       ],
       image: "/navbar/premium_photo-1689246621798-4e9cc4d07b13.jpeg",
       alertMessage:
-        "This repo was archived by the owner on Nov 7, 2026. It is now read-only.",
+        "Repository นี้ถูกเก็บถาวรโดยเจ้าของแล้วเมื่อวันที่ 7 พ.ย. 2026 ปัจจุบันเป็นแบบอ่านอย่างเดียว (Read-only)",
     },
     {
       name: "FAOS Heritage Website",
       github: "https://github.com/sitepow/faos-heritage-website",
       websiteUrl: "",
       description:
-        "A storefront built for managing and distributing certified organic extra virgin olive oils and premium natural honeys.",
+        "หน้าร้านค้าออนไลน์สำหรับการบริหารจัดการและจัดจำหน่ายน้ำมันมะกอกบริสุทธิ์พิเศษ (Extra Virgin Olive Oils) และน้ำผึ้งธรรมชาติระดับพรีเมียมที่ได้รับการรับรองมาตรฐานออร์แกนิก",
       techStack: ["TypeScript", "Next.js", "E-commerce"],
       image: "/navbar/premium_photo-1689246621798-4e9cc4d07b13.jpeg",
       alertMessage:
-        "This repo was archived by the owner on Nov 7, 2026. It is now read-only.",
+        "Repository นี้ถูกเก็บถาวรโดยเจ้าของแล้วเมื่อวันที่ 7 พ.ย. 2026 ปัจจุบันเป็นแบบอ่านอย่างเดียว (Read-only)",
     },
     {
       name: "Portfolio Website",
       github: "https://github.com/sitepow/portfolio-website",
       websiteUrl: "",
       description:
-        "Professional personal portfolio website built with Vite, React, TypeScript, Tailwind CSS, and Shadcn UI to showcase software development projects and skills.",
+        "เว็บไซต์พอร์ตโฟลิโอส่วนตัวสำหรับแนะนำโปรเจกต์และทักษะความสามารถในการพัฒนาซอฟต์แวร์ พัฒนาด้วย Vite, React, TypeScript, Tailwind CSS และ Shadcn UI",
       techStack: ["Vite", "React", "TypeScript", "Tailwind CSS", "Shadcn UI"],
       image: "/navbar/premium_photo-1689246621798-4e9cc4d07b13.jpeg",
     },
@@ -96,7 +96,7 @@ export function ProjectsSection() {
             <FolderGit2 className="size-5 text-white/80" />
           </div>
           <h2 className="text-xl md:text-2xl font-semibold tracking-wide">
-            Projects
+            ผลงานของฉัน
           </h2>
         </div>
 
@@ -119,13 +119,12 @@ export function ProjectsSection() {
                       />
                     ) : (
                       <div className="flex items-center justify-center h-full text-white/30 text-sm">
-                        No Image Preview
+                        ไม่มีภาพตัวอย่าง
                       </div>
                     )}
                     {project.alertMessage && (
-                      <div className="bg-red-500 text-white text-xs p-2.5 text-center w-full absolute bottom-0">
-                        This repo was archived by the owner on Nov 7, 2026. It
-                        is now read-only.
+                      <div className="bg-red-500/90 backdrop-blur-xs text-white text-xs p-2.5 text-center w-full absolute bottom-0 font-sans">
+                        {project.alertMessage}
                       </div>
                     )}
                   </div>
@@ -159,7 +158,7 @@ export function ProjectsSection() {
                   >
                     <Button className={`w-full justify-center ${BUTTON_ClASS}`}>
                       <ArrowUpRight className="size-4 mr-1" />
-                      {hasWebsite ? "Visit Website" : "View Code on GitHub"}
+                      {hasWebsite ? "เข้าชมเว็บไซต์" : "ดูซอร์สโค้ดบน GitHub"}
                     </Button>
                   </a>
                 </div>

@@ -13,15 +13,11 @@ export function Navbar() {
   }, [isMenuOpen]);
 
   const navItems = [
-    { id: "home", title: "Home", href: "#home" },
-    {
-      id: "projects",
-      title: "Projects",
-      href: "#projects",
-    },
-    { id: "experience", title: "Experience", href: "#experience" },
-    { id: "about-me", title: "About Me", href: "#about-me" },
-    { id: "contact", title: "Contact", href: "#contact" },
+    { id: "home", title: "หน้าแรก", href: "#home" },
+    { id: "projects", title: "ผลงาน", href: "#projects" },
+    { id: "experience", title: "ประสบการณ์", href: "#experience" },
+    { id: "about-me", title: "เกี่ยวกับฉัน", href: "#about-me" },
+    { id: "contact", title: "ติดต่อฉัน", href: "#contact" },
   ];
 
   const scrollToSection = (

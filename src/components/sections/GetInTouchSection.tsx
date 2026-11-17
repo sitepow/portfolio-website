@@ -8,16 +8,16 @@ export function GetInTouchSection() {
       <div className="text-white flex flex-col items-center text-center justify-between min-h-100 backdrop-blur-md py-5 px-2.5 md:px-10 md:py-16">
         <div className="flex flex-col items-center gap-6 max-w-2xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
-            Get In Touch
+            ติดต่อฉัน
           </h2>
 
           <p className="text-white/70 text-base md:text-lg leading-relaxed">
-            Focused On{" "}
+            มุ่งเน้นการพัฒนาทั้ง{" "}
             <span className="text-emerald-400 font-medium">
-              Front-End Development, Back-End Development
+              Front-End Development และ Back-End Development
             </span>
-            .<br />
-            Let&apos;s Connect And Bring Your Project To Life!
+            <br />
+            มาร่วมเชื่อมต่อและสร้างสรรค์โปรเจกต์ของคุณให้เป็นจริงไปด้วยกันครับ!
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mt-2">
@@ -28,7 +28,7 @@ export function GetInTouchSection() {
             >
               <Button className="bg-white text-black hover:bg-white/90 font-medium px-6 py-2.5 rounded-xl flex items-center gap-2 transition-all">
                 <Mail className="size-4" />
-                Email
+                ส่งอีเมล
               </Button>
             </a>
             <a
@@ -38,7 +38,7 @@ export function GetInTouchSection() {
             >
               <Button className="bg-white text-black hover:bg-white/90 font-medium px-6 py-2.5 rounded-xl flex items-center gap-2 transition-all">
                 <Download className="size-4" />
-                Resume
+                ดาวน์โหลด เรซูเม่
               </Button>
             </a>
           </div>

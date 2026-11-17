@@ -13,16 +13,16 @@ export function ExperienceSection() {
     {
       company: "PROFLOW LABS CO., LTD",
       role: "Full Stack Web Developer",
-      period: "Dec 2023 - May 2024",
+      period: "ธ.ค. 2023 - พ.ค. 2024",
       description:
-        "Developed a mission-critical Real-time Omni-channel CRM centralizing Telegram and Line interactions into a single interface. Managed end-to-end development for client projects (Giftwise, Salebuddy, ATHGold) and established standardized Git workflows to elevate team code quality.",
+        "พัฒนาและดูแลระบบ Real-time Omni-channel CRM ซึ่งเป็นระบบสำคัญที่ช่วยรวมการสนทนาจาก Telegram และ Line เข้ามาไว้ในอินเตอร์เฟสเดียว จัดการการพัฒนาแบบ End-to-End สำหรับโปรเจกต์ของลูกค้า (เช่น Giftwise, Salebuddy, ATHGold) พร้อมทั้งจัดทำและวางมาตรฐาน Git Workflow เพื่อยกระดับคุณภาพโค้ดและการทำงานร่วมกันภายในทีม",
     },
     {
       company: "BRAINWAVE GROUP CO., LTD",
       role: "Full Stack Web Developer",
-      period: "June 2022 - May 2023",
+      period: "มิ.ย. 2022 - พ.ค. 2023",
       description:
-        "Designed and maintained key ERP modules for Maintenance Departments with a focus on system reliability. Contributed to large-scale insurance web platforms and played a key role in identifying and resolving critical production bugs to reduce downtime.",
+        "ออกแบบและบำรุงรักษาโมดูลระบบ ERP ที่สำคัญสำหรับแผนกซ่อมบำรุง โดยมุ่งเน้นไปที่ความเสถียรและความน่าเชื่อถือของระบบ ร่วมพัฒนาแพลตฟอร์มเว็บประกันภัยขนาดใหญ่ และมีบทบาทสำคัญในการตรวจสอบและแก้ไข Bug วิกฤตบนระบบ Production เพื่อลดระยะเวลาที่ระบบหยุดทำงาน (Downtime)",
     },
   ];
 
@@ -34,7 +34,7 @@ export function ExperienceSection() {
             <Briefcase className="size-5 text-white/80" />
           </div>
           <h2 className="text-xl md:text-2xl font-semibold tracking-wide">
-            Experience
+            ประสบการณ์การทำงาน
           </h2>
         </div>
 
